@@ -5,7 +5,7 @@
 const singleNumber = function(nums) {
   let result = 0;
   
-  for (let num of nums) {
+  for (const num of nums) {
     result ^= num;
   }
   
