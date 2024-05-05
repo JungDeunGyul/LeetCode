@@ -8,8 +8,8 @@ const findDifference = function(nums1, nums2) {
   const set2 = new Set(nums2);
   const result = [[], []];
 
-  const setNums1 = [...set1].sort((a, b) => (a - b));
-  const setNums2 = [...set2].sort((a, b) => (a - b));
+  const setNums1 = [...set1];
+  const setNums2 = [...set2];
   
   const setNums1Length = setNums1.length;
   const setNums2Length = setNums2.length;
