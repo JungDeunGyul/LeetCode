@@ -23,7 +23,7 @@ const calPoints = function(operations) {
   if (countScoreArray.length === 0) {
     return 0;
   }
-  console.log(countScoreArray)
+
   const result = countScoreArray.reduce((a, b) => (a + b));
 
   return result;
