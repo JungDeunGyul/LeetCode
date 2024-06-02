@@ -7,5 +7,7 @@ const isAnagram = function(s, t) {
   const sortS = s.split("").sort().join("");
   const sortT = t.split("").sort().join("");
   
-  return sortS === sortT
+  const result = sortS === sortT;
+  
+  return result;
 };
