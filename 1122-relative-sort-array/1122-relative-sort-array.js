@@ -17,6 +17,7 @@ const relativeSortArray = function(arr1, arr2) {
       }
     }
   }
+  
   arr1.sort((a,b) => a - b);
   
   result.push(...arr1);
