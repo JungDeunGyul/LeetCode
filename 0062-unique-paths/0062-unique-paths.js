@@ -13,6 +13,8 @@ const uniquePaths = function(m, n) {
       dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
     }
   }
+  
+  const result = dp[length - 1][width - 1];
 
-  return dp[length - 1][width - 1];
+  return result;
 };
