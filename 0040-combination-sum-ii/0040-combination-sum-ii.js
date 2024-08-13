@@ -19,7 +19,6 @@ const combinationSum2 = function(candidates, target) {
     }
     
     for (let i = start; i < candidates.length; i++) {
-      // Correct condition to skip duplicates
       if (i > start && candidates[i] === candidates[i - 1]) {
         continue;
       }
