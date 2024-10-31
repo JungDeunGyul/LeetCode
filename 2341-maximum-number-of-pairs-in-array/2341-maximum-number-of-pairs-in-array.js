@@ -15,6 +15,5 @@ const numberOfPairs = function(nums) {
     result[1] += Math.floor(numBucket[prop] % 2);
   }
   
-  
   return result;
 };
