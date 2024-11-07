@@ -9,7 +9,7 @@ const deleteGreatestValue = function (grid) {
     let maxInThisRound = 0;
 
     for (let i = 0; i < grid.length; i++) {
-      let maxInRow = Math.max(...grid[i]);
+      const maxInRow = Math.max(...grid[i]);
       grid[i].splice(grid[i].indexOf(maxInRow), 1);
 
       if (maxInRow > maxInThisRound) {
