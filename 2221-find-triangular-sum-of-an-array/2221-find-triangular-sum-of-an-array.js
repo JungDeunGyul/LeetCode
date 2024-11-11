@@ -3,7 +3,7 @@
  * @return {number}
  */
 const triangularSum = function(nums) {
-  let copyNumsArr = [...nums]
+  let copyNumsArr = [...nums];
 
   while (copyNumsArr.length > 1) {
     const sumArray = [];
@@ -12,9 +12,9 @@ const triangularSum = function(nums) {
       const sumTwoArrayEl = copyNumsArr[i] + copyNumsArr[i + 1];
 
       if (sumTwoArrayEl < 10) {
-        sumArray.push(sumTwoArrayEl)
+        sumArray.push(sumTwoArrayEl);
       } else {
-        sumArray.push(sumTwoArrayEl - 10)
+        sumArray.push(sumTwoArrayEl - 10);
       }
     }
 
