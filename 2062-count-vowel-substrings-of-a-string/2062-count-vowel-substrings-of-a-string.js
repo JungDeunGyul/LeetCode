@@ -7,7 +7,7 @@ const countVowelSubstrings = function(word) {
   let count = 0;
 
   for (let i = 0; i < word.length; i++) {
-    let seen = new Set();
+    const seen = new Set();
 
     for (let j = i; j < word.length; j++) {
       if (!vowels.has(word[j])) {
